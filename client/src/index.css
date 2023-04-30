@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar{
+  background-color: black !important;
+}
+.nav-link{
+  color : white !important ;
+} 
+.navbar-brand{
+  color : white !important ;
+} 
+.navbar-nav{
+  margin-left: auto !important;
+}
+.smalling{
+  height:200px;
+  width:100% !important;
+  border-radius: 5px !important;
+}
+h1{
+  font-size : 20px !important;
+}
+.btn{
+  background-color: black !important;
+  color : white !important;
+  box-shadow: none !important;
+}
+.bs{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top : 20px !important;
+  border-radius: 5px !important;
+  padding: 20px !important;
+}
+.biging{
+  height : 400px;
+  width:100% !important;
+  border-radius: 5px !important;
+}
+input,select, .ant-picker { 
+  box-shadow: none !important;
+  margin-top: 10px !important;
+  border: 2px solid black !important;
+  width : 100% !important;
+  border-radius : 3px !important;
+  height: 35px !important;
+}
+h2{
+  font-size:30px;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.dropdown-toggle{
+  border: 0px solid black !important;
+}
+.ant-picker-input input{
+  border: none !important;
+}
+p{
+  font-size : 16px !important;
+}
+.landing{
+  background-color: black !important;
+  height: 100vh;
+}
+.landingbtn{
+  background-color: white !important;
+  color: black !important;
+  margin-top: 30px;
+}
+
+.modal-body .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main{
+  width:100%;
+  height:100%;
+  position:absolute;
+  overflow: hidden; 
+}
+#box1{
+  width:530px;
+  height:625px;
+  background-image:url('https://res.cloudinary.com/davims6ce/image/upload/v1597557707/1_pblr2h.png');
+  position:absolute;
+  bottom:-100%;
+  left:30%;
+  animation: anim 2s forwards, anim2 3s forwards 3s;
+}
+#box1:after{
+  content:'';
+  position:absolute;
+  width:530px;
+  height:625px;
+  background-image:url('https://res.cloudinary.com/davims6ce/image/upload/v1597557706/2_meanqt.png');
+  left:0px;
+  z-index: -1;
+}
+@keyframes anim{
+  from{
+    bottom:-100%;
+  }
+  to{
+    bottom:0%;
+  }
+}
+@keyframes anim2{
+  from{
+    left:30%;
+    width:530px;
+  }
+  to{
+    width:0px;
+    left:50%;
+  }
+}
+#box2{
+  width:auto;
+  height:auto;
+  font-family: 'Bahnschrift Condesed';
+  color: #FF69B4;
+  font-size:10em;
+  font-weight:500;
+  line-height:130px;
+  position:absolute;
+  top:100px;
+  left:100px;
+  overflow: hidden;
+}
+#text{
+  position: relative;
+  left: -100%;
+  animation: anim3 2s forwards 3s;
+}
+@keyframes anim3{
+  from{
+    left:-100%;
+  }
+  to{
+    left:0%;
+  }
+}
+#box3{
+  overflow:hidden;
+}
+#container{
+  width:100%;
+  position:absolute;
+  top:-100%;
+  animation: anim4 2s forwards 2.5s;
+}
+#logo{
+  float: left;
+  margin-left:100px;
+  margin-top:20px;
+}
+#logo img{
+     width:50px;
+}
+#menu{
+  font-family: 'Bahnschrift Condesed';
+  font-size:14px;
+  color:black;
+  letter-spacing:2px;
+  margin-right:150px;
+  margin-top:20px;
+  float:right; 
+}
+#menu ul{
+  list-style: none;
+}
+#menu ul li{
+  display:inline-block;
+  margin-left:100px;
+}
+@keyframes anim4{
+  from{
+    top:-100%;
+  }
+  to{
+    top:0%;
+  }
+}
+.bgound{
+  margin:0px;
+  background: #1E242A;
+}
